@@ -4,13 +4,11 @@ package com.kafkademo.chatapp.controllers;
 import com.kafkademo.chatapp.service.KafkaProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/kafka")
+@CrossOrigin(origins = "*")
 public class KafkaProducerController {
 
 
